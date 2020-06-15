@@ -1,0 +1,54 @@
+  h3{
+        color: crimson;
+        border: 2px dotted;
+        border-color:darkblue;
+        background: green;
+    }
+    h4{
+        color:darkviolet;
+        border: 2px solid;
+        border-color:fuchsia;
+        text-align: center;
+            
+    }
+/*
+body{
+    background-color:lightgray
+}
+*/
+.square{
+    width: 100px;
+    height: 100px;
+    background-color: darkgoldenrod;
+/*    margin:inherit; //if margin property is inherit then there will be padding on all side*/
+    margin: auto;
+    /*    margin:auto; //if margin property is auto then element will align center*/
+}
+#circle{
+  color: deeppink;
+    font-family: fantasy;
+}
+.container{
+/*    backround color start from one color to other color*/
+/*    background: linear-gradient( blue,green);*/
+    
+    background: linear-gradient(to right, blue,lightblue);
+    /*    box-shadow: righ-tpx bottom-px spreadout-px color-darkblue*/
+    box-shadow: 2px 5px 10px darkblue;
+}
+h1{
+    text-shadow: 2px 5px 0px black;
+    color: aliceblue;
+}
+h2{
+   color: rgb(100,2,3) 
+}
+body{
+    background-image: url('../Image.jpg');
+    background-repeat: no-repeat;
+    background-size:cover
+    
+}
+.borderImage{
+    border:5px dotted red;
+}
