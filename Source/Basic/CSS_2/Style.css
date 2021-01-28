@@ -1,0 +1,54 @@
+
+/*gouping of styles for classes,id,elements*/
+html{
+    font-family:serif;
+    
+    
+}
+h1,h2{
+    color: #ffffff;
+    background: black;
+        
+}
+
+body{
+    background-image: url(Image.jpg);
+    background-repeat:no-repeat;
+    background-attachment:local;
+    background-position:center;
+    background-clip: content-box;
+    border: 2px;
+}
+
+.img{
+background-color:aquamarine;
+    background-clip:inherit;
+    border: 2px solid;
+}
+
+.imgb{
+background-color:aquamarine;
+    background-clip:content-box;
+    border: 2px solid;
+}
+/*Child selector*/
+/*It does goes through all level of nested elements*/
+ul li{
+    color: red
+}
+
+
+/*descendent selector*/
+/*It does not goes through all level of nested elements it only goes one level deep*/
+ul>li {
+    color: yellow
+} 
+h1{
+    color: aqua
+}
+h1,h2{
+    color: blue;
+}
+h1{
+    color: crimson;
+}

@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en-UK">
+
+<head>
+    <title>Course</title>
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            padding: 5px;
+            text-align: left;
+        }
+
+    </style>
+    
+    
+<!--    <base href="https://www.w3schools.com/images/" target="_blank">-->
+</head>
+
+<body>
+    <h2 id="C4">Chapter 4</h2>
+    <table>
+        <tr>
+            <td> <img src="https://images.app.goo.gl/ZavCm2i6n5KpxoRB6" alt="Image">
+            </td>
+            <td>Welocome to course</td>
+        </tr>
+    </table>
+
+    <ul>
+        <li>
+
+            <ol>
+                <li><a href="#">About</a>
+                <li><a href="#">About</a></li>
+            </ol>
+
+        </li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Course</a></li>
+    </ul>
+    <hr>
+    <p title="i am tool tip"> I am learning <em>html and css</em> to become a full stack developer. At first i was a <b>backend developer</b> and i was always worried about not knowing about Html and css eventhough i was working in angular i was not touching html and Css as those were done by UI team in my office</p>
+
+
+
+    <!-- table related-->
+
+    <table title="mano" border="2" cellpadding=0 cellspacing="50">
+        <tr>
+            <td><button> <a href="https://www.google.com">Hi Google</a></button></td>
+            <td><button><a href="https://www.gmail.com">Hi Gmail</a></button></td>
+            <td><button>Hi Youtube</button></td>
+
+        </tr>
+
+
+
+    </table>
+    <br>
+
+    <hr>
+    <br>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/c2dq9_lyT1c" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+    <!--
+    The HTML <pre> element defines preformatted text.
+
+The text inside a <pre> element is displayed in a fixed-width font (usually Courier), and it preserves both spaces and line breaks:
+-->
+
+    <pre>
+  My Bonnie lies over the ocean.
+
+  My Bonnie lies over the sea.
+
+  My Bonnie lies over the ocean.
+
+  Oh, bring back my Bonnie to me.
+</pre>
+
+
+    <p>
+        <strong>My Bonnie</strong> lies over the ocean.
+
+        <b>My Bonnie</b> lies over the sea.
+
+        <mark>marked/highlighted text</mark>
+        <del>deleted/removed text</del>
+        <ins> inserted/added text</ins>
+        <sub>subscripted</sub>
+        <sup>superscripted </sup>
+        <small>smaller text:</small>
+        <q>quotation marks</q>
+        <abbr title="World Health Organization">WHO</abbr>
+        <!--
+       The HTML <cite> element defines the title of a work.
+Browsers usually display <cite> elements in italic.
+-->
+        <cite>The Manager</cite>
+        <!--        bi-directional override-->
+        <bdo dir="rtl">This text will be written from right to left</bdo>
+    </p>
+
+    <!--    The <address> element is usually displayed in italic. Most browsers will add a line break before and after the element-->
+
+    <address>
+        Written by John Doe.<br>
+        Visit us at:<br>
+        Example.com<br>
+        Box 564, Disneyland<br>
+        USA
+    </address>
+
+    <blockquote cite="http://www.worldwildlife.org/who/index.html">
+        For 50 years, WWF has been protecting the future of nature.
+        The world's leading conservation organization,
+        WWF works in 100 countries and is supported by
+        1.2 million members in the United States and
+        close to 5 million globally.
+    </blockquote>
+
+    <!--
+The target attribute specifies where to open the linked document.
+
+The target attribute can have one of the following values:
+
+_blank - Opens the linked document in a new window or tab
+_self - Opens the linked document in the same window/tab as it was clicked (this is default)
+_parent - Opens the linked document in the parent frame
+_top - Opens the linked document in the full body of the window
+framename - Opens the linked document in a named frame
+-->
+
+
+    <a href="https://www.w3schools.com/" target="_blank">_blank W3Schools!</a>
+    <br>
+    <a href="https://www.w3schools.com/" target="_self">_self W3Schools!</a>
+    <br>
+
+    <a href="https://www.w3schools.com/" target="_parent">_parent W3Schools!</a>
+    <br>
+
+    <a href="https://www.w3schools.com/" target="_top">_top W3Schools!</a>
+    <br>
+
+    <a href="https://www.w3schools.com/" target="framename">framename W3Schools!</a>
+    <a href="#C4">Jump to Chapter 4</a>
+    <a href="1.html#C4">Jump to Chapter 4</a>
+
+    <!-- to know more about image map   https://www.w3schools.com/html/tryit.asp?filename=tryhtml_images_map2-->
+
+    <img src="workplace.jpg" alt="Workplace" usemap="#workmap" width="400" height="379">
+
+    <map name="workmap">
+        <area shape="rect" coords="34,44,270,350" alt="Computer" href="computer.htm">
+        <area shape="rect" coords="290,172,333,250" alt="Phone" href="phone.htm">
+        <area shape="circle" coords="337,300,60" alt="Cup of coffee" href="coffee.htm">
+    </map>
+
+
+    <table style="width:100%">
+        <tr>
+            <th>Name:</th>
+            <td>Bill Gates</td>
+        </tr>
+        <tr>
+            <th rowspan="2">Telephone:</th>
+            <td>55577854</td>
+                        <td>will come on side so row span = 2 </td>
+        </tr>
+        <tr>
+            <td>55577855</td>
+        </tr>
+        <tr>
+             <th>Next row</th>
+            <td>55577855</td>
+        </tr>
+    </table>
+
+    <h2>Table Caption</h2>
+    <p>To add a caption to a table, use the caption tag.</p>
+
+    <table style="width:100%">
+        <caption>Monthly savings</caption>
+        <tr>
+            <th>Month</th>
+            <th>Savings</th>
+        </tr>
+        <tr>
+            <td>January</td>
+            <td>$100</td>
+        </tr>
+        <tr>
+            <td>February</td>
+            <td>$50</td>
+        </tr>
+    </table>
+    
+<!--    <colgroup> and <col> tags-->
+    
+    <table>
+  <colgroup>
+    <col span="2" style="background-color:red">
+    <col style="background-color:yellow">
+  </colgroup>
+  <tr>
+    <th>ISBN</th>
+    <th>Title</th>
+    <th>Price</th>
+  </tr>
+  <tr>
+    <td>3476896</td>
+    <td>My first HTML</td>
+    <td>$53</td>
+  </tr>
+</table>
+
+<!--    The <dl> tag defines the description list, the <dt> tag defines the term (name), and the <dd> tag describes each term-->
+<dl>
+  <dt>Coffee</dt>
+  <dd>- black hot drink</dd>
+  <dt>Milk</dt>
+  <dd>- white cold drink</dd>
+</dl>
+</body>
+
+</html>

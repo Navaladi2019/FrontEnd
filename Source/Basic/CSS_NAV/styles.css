@@ -1,0 +1,379 @@
+/**/
+
+nav,
+header,
+footer {
+    display: block
+}
+
+body {
+
+    /*    line-height is the distance between lines in any text recommened value is 1.3-1.5 which is unit less value*/
+    line-height: 1;
+    margin: 0;
+}
+
+
+label {
+    font-size: 35px;
+    font-weight: 600;
+}
+
+p {
+    font-size: 28px;
+    line-height: 1.2;
+
+}
+
+article p {
+    font-size: 35px;
+    padding: 20px;
+}
+
+.container {
+    width: 100%;
+    margin: auto;
+    padding-top: 4%;
+    padding-bottom: 4%;
+}
+
+
+.row {
+
+    /*    A flex container expands items to fill available free space or shrinks them to prevent overflow. Most importantly, the flexbox layout is direction-agnostic as opposed to the regular layouts */
+    display: flex;
+    width: 100%;
+
+    flex-wrap: wrap;
+
+
+    align-items: center;
+
+}
+
+.row::after {
+    display: table;
+    /*    Do not allow floating elements on the left or the right side of a specified  element*/
+    clear: both;
+
+    /*    content is adding specified value after the element*/
+    content: "";
+}
+
+.col-1 {
+    width: 8.33%;
+}
+
+.col-2 {
+    width: 16.66%;
+}
+
+.col-3 {
+    width: 25%;
+}
+
+.col-4 {
+    width: 33.33%;
+}
+
+.col-5 {
+    width: 41.66%;
+}
+
+.col-6 {
+    width: 50%;
+}
+
+.col-7 {
+    width: 58.33%;
+}
+
+.col-8 {
+    width: 66.66%;
+}
+
+.col-9 {
+    width: 75%;
+}
+
+.col-10 {
+    width: 83.33%;
+}
+
+.col-11 {
+    width: 91.66%;
+}
+
+.col-12 {
+    width: 100%;
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+/***********NAV bar*****************/
+
+nav {
+    width: 100%;
+    margin: 0;
+}
+
+nav ul {
+    background-color: #eee;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit
+}
+
+
+ul.topnav li {
+    list-style: none;
+    float: left;
+}
+
+ul.topnav li.topnav-right {
+
+    float: right
+}
+
+ul.topnav li.topnav-right1 {
+
+    float: right;
+
+    margin-right: 2% !important;
+}
+
+ul.topnav li a {
+    display: block;
+    text-decoration: none;
+    min-height: 16px;
+    text-align: center;
+    padding: 14px;
+    text-transform: uppercase;
+    color: #666;
+}
+
+
+ul.topnav li a:hover {
+
+    color: #fff;
+    background-color: #0080ff;
+
+}
+
+ul.topnav li.dropdownIcon {
+    display: none;
+}
+
+
+/*################Custom Styles###############*/
+
+#section-1-gradient {
+    background-color: #076Dff;
+    /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#076Dff, #65a5ff);
+    background: -moz-linear-gradient(#076Dff, #65a5ff));
+    background: -o-linear-gradient(#076Dff, #65a5ff));
+    background: linear-gradient(#076Dff, #65a5ff));
+    /* Standard syntax (must be last) */
+
+
+}
+
+div.box {
+
+    background-color: white;
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15), 0 2px 3px 0 rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin: 24px;
+    padding: 36px 24px 40px 54px;
+    border-radius: 7px;
+}
+
+div.slopeIcon img{
+    display: block;
+   margin: auto;
+     box-shadow: -2px -2px 5px 2px rgba(0, 0, 0, 0.15);
+}
+
+button {
+    font-size: 32px;
+    font-weight: 700;
+    color: white;
+    background: #0069ff;
+    padding: 15px 60px;
+    margin: 5px;
+    display: block;
+    text-align: center;
+    border-radius: 7px;
+}
+
+.learnMore {
+    margin: auto;
+    display: block;
+}
+
+div.icon {
+    width: 100%;
+}
+
+div.leftside-col {
+    margin-left: 30%;
+}
+
+
+div.rightside-col {
+    margin-left: 15%;
+}
+
+h1.large {
+    color: white;
+    font-size: 56px;
+    margin: 0;
+    line-height: 70px;
+}
+
+form h2 {
+    color: white;
+}
+
+.section2Header {
+    font-size: 60px;
+    text-align: center;
+}
+
+/*attribute selector*/
+input[type="text"] {
+    width: 400px;
+    font-size: 20px;
+    min-width: 100px;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+
+
+.footsy{
+    
+    background-color: #666;
+    text-align: left;
+   padding-left: 10%;
+}
+
+footer.footsy h1{
+    color: white;
+    font-size: 30px;
+}
+
+footer.footsy ul{
+    list-style: none;
+     padding-left: 0;
+}
+
+footer.footsy ul li{
+   color: white;
+    font-size: 22px;
+    line-height: 1.2;
+} 
+
+
+/*  box-sizing: border-box; this is used so whet ever the padding is box width willl reman constant*/
+
+/*##############Mobile Version#############*/
+
+@media screen and (max-width: 680px) {
+    ul.topnav li:not(:nth-child(1)) {
+        display: none;
+    }
+
+    ul.topnav li.dropdownIcon {
+        display: block;
+        float: right;
+    }
+
+    ul.topnav.responsive li.dropdownIcon {
+        /*        With absolute positioning, an element can be placed anywhere on a page. The element is positioned relative to its first positioned (not static) ancestor element*/
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
+    ul.topnav.responsive {
+
+        position: relative;
+    }
+
+    ul.topnav.responsive li {
+        display: inline;
+        float: none;
+    }
+
+    ul.topnav.responsive li a {
+        display: block;
+        text-align: left;
+    }
+
+    h1.section2Header {
+        font-size: 40px;
+    }
+
+
+
+    ul.topnav li.topnav-right1 {
+
+        float: none;
+        margin-right: 0% !important;
+
+    }
+    article p{
+        font-size: 25px;
+    }
+
+    .col-6,
+    .col-4,
+    .col-7,
+    .col-5 {
+        width: 100%;
+        margin: 0;
+    }
+    
+    
+    .mobilestack{
+          width: 50%;
+        
+    }
+
+    div.box {
+        padding: 5px;
+        display: block;
+    }
+    div.slopeIcon img{
+        width: 95%;
+    }
+
+    div.leftside-col,
+    div.rightside-col {
+        margin: 15px;
+    }
+
+
+    input[type="text"] {
+        width: 340px;
+
+    }
+
+    .videocontainer iframe {
+        position: relative;
+        width: 100%;
+        margin: 0;
+        overflow: hidden;
+    }
+
+}
+
+
+
+}
